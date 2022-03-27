@@ -8,8 +8,6 @@ body
 {
     height: 100%;
     background-attachment: fixed;
-    /*To be removed*/
-    background-color: aquamarine;
 }
 h4
 {
@@ -61,6 +59,16 @@ nav
     left:0;
     z-index: 999;
 }
+a.nav--head
+{
+    text-decoration: none;
+    color:inherit;
+}
+a.nav--head:hover, ol:hover
+{
+    background-color: orange ;
+}
+
 #name-banner
 {
     color:rgb(4, 138, 4);
@@ -77,6 +85,7 @@ ol
 {
     padding:10px;
     font-size: large;
+    border-radius:15px;
 }
 
 /*Name*/
