@@ -1,0 +1,190 @@
+*
+{
+    margin:0px;
+    padding:0px; 
+    font-family: 'Raleway', sans-serif;
+}
+body
+{
+    height: 100%;
+    background-attachment: fixed;
+}
+h4
+{
+    text-align: center;
+    color: rgb(216, 130, 1);
+}
+div.banner
+{
+    max-width: 100%;
+    height:200px;
+    background: orange url('img/imgs/profile--banner.jpg');
+    background-size: cover;
+    margin-bottom:-50px;
+}
+.profile--pic
+{
+    /*Can use ratio*/
+    height: 200px;
+    width: 200px;
+    margin:0px auto;
+    border-radius: 50%;
+    background:rgb(238, 187, 76) url("img/imgs/profile.png");
+    filter: drop-shadow(0 0 0.75rem black);
+    background-size: cover;
+}
+#content
+{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    justify-content: center;
+}
+/*vertical line*/
+.vertical--line
+{
+    border-left:1px solid rgb(238, 187, 76);
+    padding: 0 10px;
+}
+/*Navigation*/
+nav
+{
+  
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+#name-banner
+{
+    color:rgb(4, 138, 4);
+    margin:auto;
+}
+ul
+{
+    color: rgb(131, 131, 131);
+    display: flex;
+    justify-content: center;  
+    flex-direction: row;
+}
+ol
+{
+    padding:10px;
+    font-size: large;
+}
+
+/*Name*/
+.auth-name-header
+{
+    margin:50px auto;
+    text-align: center;
+    color: rgb(131, 131, 131);
+}
+/*article*/
+p
+{
+    margin:20px auto;
+    font-weight: bold;
+    /*Recomended*/
+    line-height: 1.6;
+}
+/*Article*/
+.current--work--container
+{
+    background-color: bisque;
+    padding:20px;
+}
+.article-banner
+{
+    margin:30px auto;
+}
+h5
+{
+    color:rgb(105, 105, 105);
+}
+.education--container
+{
+    background-color: rgb(238, 187, 76);
+}
+.article--container
+{
+    
+}
+/*footer*/
+.contact
+{
+    background-color: rgb(87, 112, 58);
+}
+/*Footer*/
+div.footer
+{
+    color:white; 
+    border:1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 100;
+    font-variant-ligatures: normal;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+/*Works--images*/
+.works--container
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.img-scale
+{
+    margin:20px;
+}
+.dost
+{
+    /*To use aspect ration -- Convert dimesion*/
+    background:url('/img/work--exp/dost.png');
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+.fdc
+{
+    /*Work on dimensional scalling*/
+    background:url('/img/work--exp/fdc.png');
+    height: 50px;
+    width: 210px;
+    background-size: cover;
+}
+.poea
+{
+    background:url('/img/work--exp/poea.jpg');
+    height: 70px;
+    width: 210px;
+    background-size: cover;
+}
+.sitel
+{
+    background:url('/img/work--exp/sitel.png');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+.gwg
+{
+    background:url('/img/work--exp/gwg.svg');
+    height: 50px;
+    width: 200px;
+    background-size: cover;
+}
+.bsu
+{
+    background:url('/img/work--exp/bsu.png');
+    height: 50px;
+    width: 200px;
+    background-size: cover;
+}
