@@ -20,7 +20,7 @@ div.banner
     height:200px;
     background: orange url('img/imgs/profile--banner.jpg');
     background-size: cover;
-    margin-bottom:-50px;
+    margin-bottom:-100px;
 }
 .profile--pic
 {
@@ -30,7 +30,7 @@ div.banner
     margin:0px auto;
     border-radius: 50%;
     background:rgb(238, 187, 76) url("img/imgs/profile.png");
-    filter: drop-shadow(0 0 0.75rem black);
+    /*filter: drop-shadow(0 0 0.75rem black);*/
     background-size: cover;
 }
 #content
@@ -50,7 +50,7 @@ div.banner
 nav
 {
   
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     position: fixed;
     width: 100%;
     display: flex;
@@ -58,6 +58,10 @@ nav
     top:0;
     left:0;
     z-index: 999;
+}
+#banner--wrapper
+{
+    margin-top: 41px;
 }
 a.nav--head
 {
@@ -120,10 +124,6 @@ h5
 .education--container
 {
     background-color: rgb(238, 187, 76);
-}
-.article--container
-{
-    
 }
 /*footer*/
 .contact
