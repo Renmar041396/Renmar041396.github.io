@@ -8,6 +8,8 @@ body
 {
     height: 100%;
     background-attachment: fixed;
+    /*To be removed*/
+    background-color: aquamarine;
 }
 h4
 {
