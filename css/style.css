@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quando&display=swap');
+@import url('./card.css');
+*, ul, li
+{
+    margin:0px;
+    padding:0px;
+}
+.main
+{
+    padding:8% 10%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    overflow: scroll;
+}
+.header
+{
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+}
+/*Normal view*/
+@media only screen and (min-width: 600px) {
+    .passion
+    {
+        padding:20px;
+    }
+    .profile
+    {
+        background-image: url('/images/profile.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        min-height: 200px;
+        min-width: 200px;
+        border-radius: 50%;
+        margin:0px 100px;
+    }
+    .work-with
+    {
+        max-width: 300px;
+    }
+    .header
+    {
+        display: flex;
+        justify-items: center;
+        width: 100%;
+        justify-content: space-around;
+        padding:20px 0px;
+    }
+    .nav ul li
+    {
+        width:50px;
+        list-style: none;
+        padding:0px 10px;
+        margin:10px;
+    }
+    .experience ul
+    {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+    }
+    .content p
+    {
+        margin: 50px 0px;
+    }
+}
+/*Small screen view*/
+@media only screen and (max-width: 600px) {
+    .main
+    {
+        padding:8% 5%;
+    }
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .profile
+    {
+        background-image: url('/images/profile.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        min-height: 150px;
+        min-width: 150px;
+        border-radius: 50%;
+        margin: 50px;
+        background-color: yellow;
+    }   
+    .content-profile
+    {
+        flex-direction: column-reverse;
+    }
+    .passion
+    {
+        border-bottom: 30px;
+    }
+    .content p
+    {
+        margin-top:30px;
+    }
+    div.work-with h2
+    {
+        font-size:1.5em ;
+        margin: 0px;
+    }
+    .logos
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .pagasa img
+    {
+        width: 100px;
+        height: auto;
+    }
+    .my_name
+    {
+        width :300px;
+        margin-top:30px;
+        text-align: center;
+    }
+    .content
+    {
+
+        padding:30px;
+        margin-top:10%;
+    }
+    .nav ul li
+    {
+        list-style: none;
+        justify-content: center;
+        width: 75px;
+        padding:10px;
+        text-align: center;
+    }
+}
+h3,h1
+{
+    font-family: 'Handlee', cursive;
+    font-family: 'Quando', serif;
+}
+.nav ul
+{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+li a
+{
+    text-decoration: none;
+    color:black;
+}
+a:hover
+{
+    border-bottom: 3px solid black;
+}
+
+/*body content*/
+.content-profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-profile h3
+{
+    margin:0px 30px;
+    z-index: 5;
+}
+.passion div.passion-title h1{
+    position: absolute;
+    z-index: -999;
+    color: rgb(233, 233, 233);
+    font-size: 5em;
+}
+/*Experiences*/
+.experience ul li
+{
+    list-style: none;
+}
+.main > div > h2
+{
+    text-align: center;
+    margin: 50px;
+}
+.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.scrolled-shadow {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}

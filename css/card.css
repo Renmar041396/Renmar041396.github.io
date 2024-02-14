@@ -1,0 +1,50 @@
+.--card
+{
+    height: auto;
+    margin-bottom:50px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+    padding:20px;
+    border-radius: 15px;
+
+}
+.--card a{
+    text-decoration: none;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+}
+.--card .btn
+{
+    background-color: rgb(50, 50, 255);
+}
+.--card div
+{
+    margin:30px 0px;
+}
+.--card p
+{
+    padding: 0px 10px;
+    border-left:2px solid rgb(38,79,122) ;
+}
+
+.--card img
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.employer
+{
+    max-width: 250px;
+    max-height: auto;
+}
+@media only screen and (max-width: 600px)
+{
+    .--card
+    {
+        min-width: 300px;
+        margin:20px 10%;
+    }
+}
+
