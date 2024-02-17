@@ -5,7 +5,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
     padding:20px;
     border-radius: 15px;
-
+    margin:5px; 
 }
 .--card a{
     text-decoration: none;
