@@ -105,6 +105,13 @@
         animation-duration: .5s;
         visibility: visible;
     }
+    .footer
+    {
+        width: 100%;
+        height: auto;
+        background-color: aquamarine;
+        padding:3% 10%;
+    }
 }
 /*Small screen view*/
 @media only screen and (max-width: 600px) {
@@ -185,8 +192,22 @@
         height: auto;
         padding:5px;
     }
-
-    
+    .footer
+    {
+        padding: 10px;
+        background-color: blanchedalmond;
+    }
+    .footer ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer ul li
+    {
+        padding: 5px;
+    }
 }
 a{
     text-decoration: none;
@@ -238,4 +259,32 @@ h2
 
 .scrolled-shadow {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+/*FOOTER*/
+.footer ul
+{
+    display: flex;
+}
+.footer ul li
+{
+    margin:0 10px;
+}
+#facebook
+{
+    width: 35px;
+    height: 35px;
+    background: url("/images/social.png") 0 0;
+}
+
+#in
+{
+    width: 35px;
+    height: 35px;
+    background: url("/images/social.png") -35px 0;
+}
+#github
+{
+    width: 35px;
+    height: 35px;
+    background: url("/images/social.png") 105px 0;
 }
