@@ -6,6 +6,12 @@
     padding:20px;
     border-radius: 15px;
     margin:5px; 
+    transition: transform 1s;
+}
+/**/
+.--card:hover
+{
+    transform: scale(1.05);
 }
 .--card a{
     text-decoration: none;
