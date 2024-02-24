@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quando&display=swap');
+@import url('./card.css');
+*, h3
+{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
 .--card
 {
     height: 450px;
@@ -54,3 +62,38 @@
     }
 }
 
+/*CATALOGS*/
+.container .catalog
+{
+    height: 200px;
+    width:0;
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+    background-color: #AFD3E2;
+    color: #146C94;
+}
+.container .catalog:hover
+{
+    animation: slideAnimation 1s forwards;
+    cursor:pointer;
+}
+
+
+.description
+{
+    height:10%;
+    width: inherit;
+    background-color:#146C94;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes slideAnimation {
+    from {
+        width:0;
+    }
+    to {
+        width: 50%;
+    }
+}
