@@ -1,0 +1,80 @@
+.bubble-1 {
+    border-radius: 50%;
+    border: 2px solid blue;
+    position: fixed;
+    animation: reverse-rain 10s ease-in-out infinite;
+  }
+  .bubble-2 {
+    border:10px dashed red;
+    left: 100px;
+    border-radius: 50%;
+    position: fixed;
+    animation: reverse-rain 7s ease-in infinite alternate;
+  }
+  .bubble-3 {
+    background-color: green;
+    left: 300px;
+    position: fixed;
+    animation: reverse-rain 11s ease-in infinite;
+  }
+  .bubble-4 {
+    background-color: yellow;
+    left: 150px;
+    border-radius: 50%;
+    position: fixed;
+    animation: reverse-rain 15s linear infinite alternate;
+  }
+  .bubble-5 {
+    border:5px double green;
+    left: 75px;
+    position: fixed;
+    animation: reverse-rain 16s ease-out infinite alternate;
+  }
+  .bubble-6  {
+    background-color: aquamarine;
+    left: 200px;
+    height: 200px;
+    width: 100px;
+    position: fixed;
+    animation: reverse-rain 17s ease-in-out infinite alternate;
+  }
+  @keyframes reverse-rain {
+    from {
+      bottom: -100px;
+      transform: rotate(0deg);
+    }
+    to {
+      bottom: 100vh;
+      transform: rotate(360deg);
+    }
+  }
+  /*COMPONENTS*/
+  /*100px object dimensions*/
+  .__100dim
+  {
+      height: 100px;
+      width: 100px;
+  }
+  .__200dim
+  {
+      height: 200px;
+      width: 200px;
+  }
+  .__150dim
+  {
+      height: 150px;
+      width: 150px;
+  }
+  .__75dim
+  {
+      height: 75px;
+      width: 75px;
+  }
+  .__opacity
+  {
+      opacity: .1;
+  }
+  .__zindex
+  {
+    z-index: -9;
+  }

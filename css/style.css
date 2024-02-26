@@ -8,14 +8,11 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
-.main
-{
-    padding:8% 10%;
-}
 .header
 {
     background-color: white;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 999;
 }
 .shadow {
@@ -124,6 +121,12 @@
         visibility: visible;
         transform: scale(1.2);
     }
+    .nav ul li:active
+    {
+        background-color: black;
+        color:white;
+        border-radius:15px ;
+    }
     .foot-box
     {
         border-left: 1px solid white;
@@ -133,10 +136,6 @@
 }
 /*Small screen view*/
 @media only screen and (max-width: 600px) {
-    .main
-    {
-        padding:8% 5%;
-    }
     .header
     {
         display: flex;
@@ -193,9 +192,7 @@
     }
     .content
     {
-
         padding:30px;
-        margin-top:15%;
     }
     .nav ul li
     {
@@ -282,6 +279,7 @@ h2
 /*FOOTER*/
 .footer
 {
+    margin-top: 50px;
     height: auto;
     background-color:rgb(36,35,41); 
     color:white;
