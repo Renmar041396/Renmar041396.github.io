@@ -15,6 +15,13 @@
     <title>Hey There!</title>
 </head>
 <body>
+        <div class="progress" id="popup">
+            <h1>Work in progress...</h1>
+            <p>
+                Hey there! 👋 <br>This page is currently under construction. We're working hard to bring you something awesome. Please check back soon!
+            </p>
+            <button type="submit" class="btn" onclick="progressClose()">Close</button>
+        </div>    
     <div class="header" id="content">
         <div class="my_name">
             <h1 class="hide-wrap">RB</h1>
@@ -26,25 +33,25 @@
                    <div class="line"></div>
                 </li>
                 <li>
-                   <a href="works.html">Works</a>
+                   <a href="#" onclick="progressOpen()">Works</a>
                    <div class="line"></div>
                 </li>
                 <li>
-                   <a href="#">Resume</a>
+                   <a href="#" onclick="progressOpen()">Resume</a>
                    <div class="line"></div>
                 </li>
                 <li>
-                   <a href="#">Contact</a>
+                   <a href="#" onclick="progressOpen()">Contact</a>
                    <div class="line"></div>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="main">
+    <div class="main" id="main">
         <div class="content">
             <div class="content-profile">
                 <div class="passion">
-                   <img src="/images/name.png" alt="">
+                    
                 </div>
                 <div class="profile"></div>
             </div>
@@ -152,6 +159,7 @@
         <div class="bubble-4 __100dim __opacity __zindex"></div>
         <div class="bubble-5 __75dim __opacity __zindex"></div>
         <div class="bubble-6 __100dim __opacity __zindex"></div>
+        <div class="element __100dim  __opacity __zindex"></div>
     </div>
     <script src="./js/script.js"></script>
 </body>

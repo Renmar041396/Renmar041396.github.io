@@ -1,34 +1,35 @@
+
 .bubble-1 {
     border-radius: 50%;
     border: 2px solid blue;
     position: fixed;
-    animation: reverse-rain 10s ease-in-out infinite;
+    animation: reverse-rain 19s ease-in-out infinite;
   }
   .bubble-2 {
     border:10px dashed red;
     left: 100px;
     border-radius: 50%;
     position: fixed;
-    animation: reverse-rain 7s ease-in infinite alternate;
+    animation: reverse-rain 17s ease-in infinite alternate;
   }
   .bubble-3 {
     background-color: green;
     left: 300px;
     position: fixed;
-    animation: reverse-rain 11s ease-in infinite;
+    animation: reverse-rain 20s ease-in infinite;
   }
   .bubble-4 {
     background-color: yellow;
     left: 150px;
     border-radius: 50%;
     position: fixed;
-    animation: reverse-rain 15s linear infinite alternate;
+    animation: reverse-rain 19s linear infinite alternate;
   }
   .bubble-5 {
     border:5px double green;
     left: 75px;
     position: fixed;
-    animation: reverse-rain 16s ease-out infinite alternate;
+    animation: reverse-rain 18s ease-out infinite alternate;
   }
   .bubble-6  {
     background-color: aquamarine;
@@ -36,7 +37,23 @@
     height: 200px;
     width: 100px;
     position: fixed;
-    animation: reverse-rain 17s ease-in-out infinite alternate;
+    animation: reverse-rain 15s ease-in-out infinite alternate;
+  }
+  .element {
+    border-style: solid;
+    left:230px;
+    border-width: 0 50px 100px 50px;
+    border-color: transparent transparent #7048e8 transparent;
+    animation: reverse-rain 20s ease-in-out infinite alternate;
+    position: fixed;
+  }
+  .element::after {
+    right:430px;
+    border-style: solid;
+    border-width: 0 50px 100px 50px;
+    border-color: transparent transparent #441bbf transparent;
+    animation: reverse-rain 20s ease-in-out infinite alternate;
+    position: fixed;
   }
   @keyframes reverse-rain {
     from {
@@ -45,7 +62,7 @@
     }
     to {
       bottom: 100vh;
-      transform: rotate(360deg);
+      transform: rotate(360deg);  
     }
   }
   /*COMPONENTS*/

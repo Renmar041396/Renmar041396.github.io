@@ -61,41 +61,94 @@
     {
         min-width: 300px;
         margin:20px 10%;
+        z-index: -1;
     }
-}
-
-/*CATALOGS*/
-.container .catalog
-{
-    height: 200px;
-    width:0;
-    border-radius: 15px;
-    margin: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
-    background-color: #AFD3E2;
-    color: #146C94;
-}
-.container .catalog:hover
-{
-    animation: slideAnimation 1s forwards;
-    cursor:pointer;
-}
-
-
-.description
-{
-    height:10%;
-    width: inherit;
-    background-color:#146C94;
-    position: absolute;
-    z-index: 2;
-}
-
-@keyframes slideAnimation {
-    from {
-        width:0;
+    /*works*/
+    .container
+    {
+        position: relative;
     }
-    to {
-        width: 50%;
+    .wcards
+    {
+        margin: auto;
+        padding:20px;
+        border-radius: 15px;
+        height: inherit;
+        background-color: aqua;
+        z-index: -1;
     }
+    .sample
+    {
+        height: 0;
+        width: 100%;
+        background-color: purple;
+        border-radius: 15px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    .wcards:hover + .sample {
+        animation: slideUp 2s forwards; /* Animation runs forwards on hover */
+    }
+    
+    @keyframes slideUp {
+        from {
+            height: 0;
+        }
+        to {
+            height: 90%;
+        } 
+    }
+    
+    .wcards + .sample {
+        animation: slideDown 2s backwards; /* Animation runs forwards on mouseout */
+    }
+    
+    @keyframes slideDown {
+        from {
+            height: 90%;
+        }
+        to {
+            height: 0;
+        } 
+    }
+    .progress
+    {
+        width: 80%;
+    }
+   
 }
+/*Work in Progress card*/
+.progress
+{
+    background-color: rgb(158, 251, 145);
+    max-width:400px;
+    text-align: center;
+    border-radius:20px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translate(-50%, -50%) scale(.1);
+    visibility: hidden;
+    transition:transform .4s, top .4s;
+    z-index: 9999;
+}
+.showProgress
+{
+    visibility: visible;
+    transform:translate(-50%, -50%) scale(1);
+    top: 50%;
+}
+.btn 
+{
+    padding:15px;
+    border-radius: 20px;
+    margin-block: 10px;
+}
+.progress p
+{
+    margin-block:10px ;
+}
+

@@ -23,20 +23,26 @@
 .scrolled-shadow {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+.passion
+{
+    background: url('/images/name.png') no-repeat;
+    background-size: contain;  
+}
+
 /*Normal view*/
 @media only screen and (min-width: 600px) {
     .content-profile
     {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 20px;
         border-radius: 15px;
     }
     .passion
-    {   
-        width: 350px;
-        padding:30px;
-        height: auto;
+    {
+       width: 350px;
+       height: 150px;
     }
     .profile
     {
@@ -143,6 +149,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        position: sticky;
     }  
     .profile
     {
@@ -157,10 +164,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .passion
     {
-        border-bottom: 30px;
+        height: 150px;
+        width: 350px;
+        background-size:contain;
     }
     .content p
     {
@@ -256,25 +266,30 @@ h2
     text-align: center;
     margin: 50px;
 }
+
 #informatics
 {
-    height: 60px;
-    background: url('/images/workwith.png') no-repeat 0px -60px;
+    height: 30px;
+    background: url('/images/workwith.png') no-repeat 0px -31px;
+    background-size:125px 125px;
 }
 #sitel
 {
-    height: 60px;
-    background: url('/images/workwith.png') no-repeat 0px -180px;
+    height: 35px;
+    background: url('/images/workwith.png') no-repeat 0px -91px;
+    background-size:125px 125px;
 }
 #poea
 {
-    height: 60px;
+    height: 50px;
     background: url('/images/workwith.png') no-repeat 0px 0px;
+    background-size:200px 200px;
 }
 #tu
 {
-    height: 60px;
-    background: url('/images/workwith.png') no-repeat 0px -120px;
+    height: 30px;
+    background: url('/images/workwith.png') no-repeat 0px -63px;
+    background-size:125px 125px;
 }
 /*FOOTER*/
 .footer

@@ -9,3 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+let pop = document.getElementById("popup");
+let progress = document.getElementById("main");
+
+function progressOpen()
+{
+    pop.classList.add("showProgress");
+    progress.style.filter = "blur(10px)";
+}
+function progressClose()
+{
+    pop.classList.remove("showProgress");
+    progress.style.filter = "";
+}
