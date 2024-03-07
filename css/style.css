@@ -8,9 +8,13 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
+body
+{
+    background-color: #F6F1E9;
+}
 .header
 {
-    background-color: white;
+    background-color: #F6F1E9;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -92,6 +96,7 @@
         max-width: 1000px;
         text-align: center;
         font-size: 1.2rem;
+        color: #4F200D;
     }
     .nav
     {

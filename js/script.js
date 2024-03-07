@@ -22,3 +22,10 @@ function progressClose()
     pop.classList.remove("showProgress");
     progress.style.filter = "";
 }
+function downloadResume()
+{
+    var link = document.createElement('a');
+    link.setAttribute('href','./files/renmar_bandong.pdf');
+    link.setAttribute('download', 'Renmar Bandong.pdf');
+    link.click();
+}

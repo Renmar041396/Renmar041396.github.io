@@ -1,0 +1,93 @@
+@media only screen and (max-width: 600px) {
+        .resume-content
+    {
+        backdrop-filter: blur(5px);
+        padding-inline:5%;
+    }
+
+    .sections p, .name-title, .sub-header
+    {
+        padding-block:15px ;
+    }   
+   
+    .employer
+    {
+        border-top: 1px solid white;
+        font-size: 1.2rem;
+        padding-top: 5px;
+    }
+    .tenure
+    {
+        padding-bottom:5px ;
+    }
+    .sub-header
+    {
+        background-color: #495E57;
+        border-radius: 5px;
+        color:white;
+        margin-block:15px;
+        padding:20px;
+    }
+    h3
+    {
+        padding-block: 15px;
+    }
+    .dl-resume
+    {
+        margin-block:10px;
+    }
+}
+@media only screen and (min-width: 600px)
+{
+    h3
+    {
+        padding-block: 5px; 
+    }
+   .main
+   {
+        margin-inline:20%;
+   } 
+   .sub-header, .name-title
+   {
+        margin-block: 20px;
+   }
+  
+}
+.contact ul
+{
+     padding: 0px;
+     margin-bottom:20px ;
+}
+.sections SSul
+{
+    padding-inline: 10%;
+}
+
+.sub-header
+{
+    font-weight: bold;
+    border-left:2px solid #F4CE14;
+    padding-left: 20px;
+}
+.sections li
+{
+    list-style: disc;
+}
+.myName
+{
+    font-size: 1.5em;
+}
+h3
+{
+    text-align: center;
+    background-color: #F4CE14;
+    margin-block: 15px;
+    border-radius: 5px;
+}
+.dl-resume
+{
+    padding:10px;
+    background-color: #495E57;
+    border-radius: 5px;
+    color:white;
+}

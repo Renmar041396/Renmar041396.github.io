@@ -24,12 +24,14 @@
     border-radius: 50%;
     position: fixed;
     animation: reverse-rain 19s linear infinite alternate;
+    border-radius: 30% 18% 25% 80%;
   }
   .bubble-5 {
     border:5px double green;
     left: 75px;
     position: fixed;
     animation: reverse-rain 18s ease-out infinite alternate;
+    border-radius: 50% 20%;
   }
   .bubble-6  {
     background-color: aquamarine;
@@ -43,7 +45,7 @@
     border-style: solid;
     left:230px;
     border-width: 0 50px 100px 50px;
-    border-color: transparent transparent #7048e8 transparent;
+    border-color: transparent transparent blue transparent;
     animation: reverse-rain 20s ease-in-out infinite alternate;
     position: fixed;
   }
@@ -51,7 +53,7 @@
     right:430px;
     border-style: solid;
     border-width: 0 50px 100px 50px;
-    border-color: transparent transparent #441bbf transparent;
+    border-color: transparent transparent blue transparent;
     animation: reverse-rain 20s ease-in-out infinite alternate;
     position: fixed;
   }

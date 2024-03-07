@@ -8,7 +8,7 @@
 }
 .--card
 {
-    background-color: white ;
+    background-color: #FFD93D;
     height: 400px;
     margin-bottom:50px ;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
@@ -36,7 +36,7 @@
 {
     
     position: relative; 
-    background-color: rgb(50, 50, 255);
+    background-color: #495E57;
 }
 .--card div
 {
@@ -127,7 +127,7 @@
 .progress
 {
     color:white ;
-    background-color: rgb(58,97,136);
+    background-color: #495E57;
     max-width:400px;
     text-align: center;
     border-radius:20px;
@@ -155,9 +155,8 @@
 }
 .progress .btn:hover
 {
-    background-color: red;
-    color: white;
-    transition: background-color .4s,color .4s;
+    background-color: #F4CE14;
+    transition: background-color .4s;
 }
 .progress .btn:active
 {
