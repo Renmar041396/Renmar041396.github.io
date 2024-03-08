@@ -31,8 +31,28 @@ body
 {
     background: url('/images/name.png') no-repeat;
     background-size: contain;  
+    height: 150px;
+    width: 350px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
-
+.summary
+{
+    transform: translate(-100vw);
+    opacity:0;
+    transition: all .8s ease-in .5s;
+}
+/*FOR ANIMATION ONLY*/
+.passion-animate
+{
+    opacity: 1;
+}
+.p-animate
+{
+    transform: translate(0px);
+    opacity: 1;
+}
+/*ANIMATION-END*/
 /*Normal view*/
 @media only screen and (min-width: 600px) {
     .content-profile
@@ -42,11 +62,6 @@ body
         justify-content: space-between;
         padding: 20px;
         border-radius: 15px;
-    }
-    .passion
-    {
-       width: 350px;
-       height: 150px;
     }
     .profile
     {
@@ -174,12 +189,6 @@ body
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .passion
-    {
-        height: 150px;
-        width: 350px;
-        background-size:contain;
     }
     .content p
     {

@@ -1,3 +1,7 @@
+/*
+TODO: Make Resume page interactive
+Todo: Scroll animation, where each section should apear (Opacity, transform, and such) while scrolling
+*/
 @media only screen and (max-width: 600px) {
         .resume-content
     {

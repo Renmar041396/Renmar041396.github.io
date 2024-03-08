@@ -29,3 +29,10 @@ function downloadResume()
     link.setAttribute('download', 'Renmar Bandong.pdf');
     link.click();
 }
+function animateOnLoad() {
+    var element = document.querySelector('.passion');
+    element.classList.add('passion-animate');
+    document.querySelector('.summary').classList.add('p-animate');
+}
+  
+window.onload = animateOnLoad;
