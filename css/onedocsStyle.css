@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quando&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/*Small screen*/
+@media only screen and (max-width: 600px) {
+    .main
+    {
+        padding: 10%;
+    }
+    .card
+    {
+        width: 300px;
+    }
+    .header 
+    {
+        padding: 20px;
+        text-align: center;
+    }
+}
+/*Card design*/
+.docname
+{
+    font-weight: bold;
+}
+.card
+{
+    outline: 1px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;    
+}
+button
+{
+    padding: 10px;
+    border-radius:15px;
+    background-color: cornflowerblue;
+    color: white;
+}
+/*Components-normal*/
+.margin__block
+{
+    margin: 10px;
+}
+.flex__
+{
+    display: flex;
+}
