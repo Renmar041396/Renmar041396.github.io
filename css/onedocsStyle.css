@@ -14,6 +14,12 @@
     align-items: center;
     justify-content: center;
 }
+.download
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 /*Small screen*/
 @media only screen and (max-width: 600px) {
     .main
@@ -31,6 +37,11 @@
     }
 }
 /*Card design*/
+a
+{
+    text-decoration: none;
+    color:cornflowerblue;
+}
 .docname
 {
     font-weight: bold;
