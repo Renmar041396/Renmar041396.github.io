@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Renmar | Subcription Renewal Calcualtor</title>
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="main_calc">
+       <div class="calc_title">Refund Pushback | Subcription Renewal Calculator</div>
+       <form id="dateForm">
+        <label for="date">Billing period start</label>
+        <input type="date" id="date" name="date">
+        <input type="submit" value="Submit">
+      </form>
+      <div id="billingCycle"></div>
+    </div>
+
+    <script>
+     document.getElementById('dateForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get the selected date from the form
+    const selectedDate = new Date(document.getElementById('date').value);
+
+    // Calculate billing cycle (one day before)
+    const billingCycle = new Date(selectedDate);
+    billingCycle.setDate(billingCycle.getDate() - 1); // Subtract 1 day
+
+    // Adjust month and year if necessary
+    if (billingCycle.getMonth() !== selectedDate.getMonth()) {
+        billingCycle.setDate(0); // Move to the last day of the previous month
+    }
+    if (billingCycle.getFullYear() !== selectedDate.getFullYear()) {
+        billingCycle.setMonth(11); // Move to December of the previous year
+    }
+
+    // Format billing cycle date as desired (example: YYYY-MM-DD)
+    const billingCycleFormatted = billingCycle.getFullYear() + '-' + (billingCycle.getMonth() + 1).toString().padStart(2, '0') + '-' + billingCycle.getDate().toString().padStart(2, '0');
+
+    // Display billing cycle
+    document.getElementById('billingCycle').textContent = 'Billing Cycle: ' + billingCycleFormatted;
+});
+        </script>
+</body>
+</html>

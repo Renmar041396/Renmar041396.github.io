@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,500&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quando&display=swap');
+@import url('./card.css');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    background-color: #F6F1E9;
+    position: relative;
+    background-color: #F6F1E9;
+    margin: 0; /* Ensure no default margin */
+    display: flex; /* Make body a flex container */
+    justify-content: center; /* Center child horizontally */
+    align-items: center; /* Center child vertically */
+    height: 100vh; /* Set body height to full viewport height */
+}
+.main_calc
+{
+    width: 30%;
+    height: auto;
+    background-color: #FFD93D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 15px;
+}
+.logo
+{
+    background: url('../../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 37px;
+    position: relative;
+    top: -60px;
+}
