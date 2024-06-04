@@ -6,24 +6,29 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
-.--card
-{
-    background-color: #FFD93D;
-    height: 400px;
-    margin-bottom:50px ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
-    padding:20px;
+.--card {
+    height: auto;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+    padding: 20px;
     border-radius: 15px;
-    margin:5px; 
-    transition: transform 1s;
+    margin: 5px; 
     position: relative;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(1px);
+    filter: grayscale(100%);
+    overflow: hidden;
+    transition: transform 1s ease, filter 1s ease;
 }
+
 /**/
 .--card:hover
 {
-    transform: scale(1.05);
+    transform: scale(1.3);
+    filter: grayscale(0%);
+    z-index: 999;
+    background-color: white;
 }
 .--card a{
     text-decoration: none;
@@ -36,7 +41,7 @@
 {
     
     position: relative; 
-    background-color: #495E57;
+    background-color: blue  ;
 }
 .--card div
 {

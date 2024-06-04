@@ -34,5 +34,15 @@ function animateOnLoad() {
     element.classList.add('passion-animate');
     document.querySelector('.summary').classList.add('p-animate');
 }
-  
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = document.getElementsByClassName('--card');
+    const maxLength = 150;  // Set the number of characters you want to display
+
+    Array.from(cards).forEach(card => {
+        const cardContent = card.querySelector('p');
+        if (cardContent && cardContent.innerText.length > maxLength) {
+            cardContent.innerText = cardContent.innerText.substring(0, maxLength) + '...';
+        }
+    });
+});
 window.onload = animateOnLoad;
