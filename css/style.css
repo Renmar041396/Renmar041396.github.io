@@ -40,7 +40,7 @@
 }
 article p{
     padding:15px;
-    max-width: 1000px;
+    max-width: 500px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -57,6 +57,10 @@ article
     justify-content: center;
     flex-direction: column;
 } 
+.workshops p
+{
+    max-width: 1000px;
+}
 /*FOR ANIMATION ONLY*/
 .passion-animate
 {
@@ -289,6 +293,14 @@ article
         display: none;
     }
 }
+span
+{
+    padding:3px;
+    margin:2px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bolder;
+}
 a{
     text-decoration: none;
     color:inherit;
@@ -341,24 +353,50 @@ h2
 {
     height: 60px;
     background: url('/images/workwith.png') no-repeat 0px -60px;
-}
-#training_1_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat 0px -240px;
-}
+}  
 #jerry_marie
 {
     height: 60px;
     width: 250px;
     background: url('/images/workwith.png') no-repeat -250px 0px;
 }
+#training_1_img {
+    width: 250px;
+    height: 60px;
+    background: url('/images/workwith.png') no-repeat 0px -240px;
+
+} 
 #training_2_img
 {
     height: 60px;
     width: 250px;
     background: url('/images/workwith.png') no-repeat 0px -300px;
+}
+#training_3_img
+{
+    height: 60px;
+    width: 250px;
+    background: url('/images/workwith.png') no-repeat -250px -60px;
+}
+#training_4_img
+{
+    height: 60px;
+    width: 250px;
+    background: url('/images/workwith.png') no-repeat -250px -120px;
+}
+#training_5_img
+{
+    height: 60px;
+    width: 250px;
+    background: url('/images/workwith.png') no-repeat -250px -180px;
+    
+}
+#training_6_img
+{
+    height: 60px;
+    width: 250px;
+    background: url('/images/workwith.png') no-repeat -250px -240px;
+    
 }
 /*FOOTER*/
 .footer
