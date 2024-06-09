@@ -32,7 +32,7 @@ function downloadResume()
 function animateOnLoad() {
     var element = document.querySelector('.passion');
     element.classList.add('passion-animate');
-    document.querySelector('.summary').classList.add('p-animate');
+    document.querySelector('.summary').classList.add('passion-animate');
 }
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.getElementsByClassName('--card');

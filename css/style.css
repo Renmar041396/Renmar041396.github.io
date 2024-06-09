@@ -14,7 +14,7 @@
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 9999;
 }
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -33,47 +33,93 @@
     opacity: 0;
     transition: opacity 1s ease-in;
 }
-.summary
-{
-    transform: translate(-100vw);
-    transition: all .8s ease-in .5s;
-}
 article p{
     padding:15px;
     max-width: 500px;
     text-align: center;
     font-size: 1.2em;
 }
-article
+article, .trainings, .training
 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.trainings , .training
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 } 
+.trainings
+{
+    flex-direction: column ;
+}
+
 .workshops p
 {
     max-width: 1000px;
 }
+.sprite
+{
+    background: url('/images/workwith.png') no-repeat;
+}
 /*FOR ANIMATION ONLY*/
-.passion-animate
+.passion-animate, .summary.passion-animate
 {
     opacity: 1;
 }
-.p-animate
+.summary
 {
-    transform: translate(0px);
-    opacity: 1;
+   opacity: 0;
+   transition: opacity 1s ease-in;
+   transition-delay: 1s;
 }
 /*ANIMATION-END*/
 /*Normal view*/
 @media only screen and (min-width: 600px) {
+    /*For trainings*/
+    /*trainings components*/
+    .trainings-dim
+    {
+        height: 120px;
+        width: 500px;
+        min-width: 500px;
+    }
+    /*End of components*/
+    .training:nth-child(even)
+    {
+        flex-direction: row-reverse;
+    }
+    .training 
+    {
+        max-width: 1000px;
+    }
+
+    .training p
+    {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .img-1
+    {
+        background-position: 0px -240px;
+    }
+    .img-2
+    {
+        background-position: 0px -360px;
+    }
+    .img-3
+    {
+        background-position: -500px -120px;
+    }
+    .img-4
+    {
+        background-position: -500px -240px;
+    }
+    .img-5
+    {
+        background-position: -500px -0px;
+    }
+    .img-6
+    {
+        background-position: -500px -360px;
+    }
+    /*End of trainings*/
     .content-profile
     {
         display: flex;
@@ -200,9 +246,50 @@ article
         padding-left:15px;
         margin: 15px 0px;
     }
+    
 }
 /*Small screen view*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
+    /*For trainings*/
+    .training
+    {
+        flex-direction: column;
+    }
+    .training p
+    {
+        padding:30px;
+    }
+    .trainings-dim
+    {
+        width: 250px;
+        height: 60px;
+        background-size: 500px 240px;
+    }
+    .img-1
+    {
+        background-position: 0px -120px;
+    }
+    .img-2
+    {
+        background-position: 0px -180px;
+    }
+    .img-3
+    {
+        background-position: -250px -60px;
+    }
+    .img-4
+    {
+        background-position: -250px -120px;
+    }
+    .img-5
+    {
+        background-position: -250px -0px;
+    }
+    .img-6
+    {
+        background-position: -250px -180px;
+    }
+    /*End of trainings*/
     .header
     {
         display: flex;
@@ -360,44 +447,6 @@ h2
     width: 250px;
     background: url('/images/workwith.png') no-repeat -250px 0px;
 }
-#training_1_img {
-    width: 250px;
-    height: 60px;
-    background: url('/images/workwith.png') no-repeat 0px -240px;
-
-} 
-#training_2_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat 0px -300px;
-}
-#training_3_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat -250px -60px;
-}
-#training_4_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat -250px -120px;
-}
-#training_5_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat -250px -180px;
-    
-}
-#training_6_img
-{
-    height: 60px;
-    width: 250px;
-    background: url('/images/workwith.png') no-repeat -250px -240px;
-    
-}
 /*FOOTER*/
 .footer
 {
@@ -407,4 +456,4 @@ h2
     color:white;
     padding:3% 10%;
 }
-/*COMPONENT*/
+
