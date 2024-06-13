@@ -67,6 +67,13 @@
     {
         margin:25px 0;
     }
+    @media only screen and (min-width: 600px)
+    {
+        .training
+        {
+            margin: 100px 0;
+        }
+    }
     /*Wide Screen*/
     @media only screen and (max-width: 600px)
     {

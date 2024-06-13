@@ -8,21 +8,25 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;   
+    top: 0px;
+    z-index: 999;    
+}
 .header
 {
     background-color:transparent;
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 9999;
 }
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
 }
 
 .scrolled-shadow {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);  
 }
 .passion
 {
@@ -141,6 +145,10 @@ article, .trainings, .training
     {
         max-width: 300px;
     }
+    .header-main
+    {
+        transition: top 1s ease;
+    }
     .header
     {
         display: flex;
@@ -149,6 +157,8 @@ article, .trainings, .training
         justify-content: space-around;
         padding:20px 0px;
         align-items: center;
+        max-width: 100%;
+        transition: max-width 1s ease, border-radius 1s ease;
     }
     .my_name div img
     {
@@ -187,6 +197,7 @@ article, .trainings, .training
         transition: all .3s;
         flex:1;
         text-align: center;
+        font-size: 1.2em;
     }
     @keyframes slideAnimation {
         from
@@ -290,6 +301,10 @@ article, .trainings, .training
         background-position: -250px -180px;
     }
     /*End of trainings*/
+    .header-main
+    {
+        max-width: 100%;
+    }
     .header
     {
         display: flex;
@@ -450,7 +465,7 @@ h2
 /*FOOTER*/
 .footer
 {
-    margin-top: 50px;
+    margin-top: 50px; 
     height: auto;
     background-color:rgb(36,35,41); 
     color:white;

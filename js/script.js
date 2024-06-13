@@ -1,13 +1,35 @@
 document.addEventListener("DOMContentLoaded", function() {
     var content = document.getElementById("content");
-
+    var header_main = document.querySelector(".header-main");
+    var header = document.querySelector(".header");
     window.addEventListener("scroll", function() {
-        if (window.scrollY > 0) {
-            content.classList.add("scrolled-shadow");
-        } else {
-            content.classList.remove("scrolled-shadow");
-        }
+        if(window.matchMedia("(min-width: 600px)").matches)
+            {
+                if (window.scrollY > 0) {
+                    content.classList.add("scrolled-shadow");
+                    header_main.style.top = "10px";
+                    header.style.maxWidth = "80%";
+                    header.style.borderRadius = "30px"
+                } else {
+                    content.classList.remove("scrolled-shadow");
+                    header_main.style.top = "0px";
+                    header.style.maxWidth = "100%";
+                    header.style.borderRadius = "0px"
+                }
+             }
+        else
+            {
+                if (window.scrollY > 0) {
+                    content.classList.add("scrolled-shadow");
+                } else {
+                    content.classList.remove("scrolled-shadow");
+                }
+                header.style.maxWidth = "100%";
+                header_main.style.top = "0";
+            }
+        
     });
+
 });
 let pop = document.getElementById("popup");
 let progress = document.getElementById("main");
